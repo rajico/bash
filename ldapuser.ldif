@@ -1,0 +1,81 @@
+dn: uid=administrador,ou=people,dc=srv,dc=world
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+sn: administrador
+givenName: Administrador
+cn: Administrador
+displayName: Administrador
+uidNumber: 1000
+gidNumber: 1000
+userPassword: {crypt}$6$H7RLxFkuq6BPRoYF$y.6.DDJZ31kEfoS6fgGPwg.OA3ZdGefXToc5pP808TLPXIi16k8ZsTkS7E6YdVk47VL1Qsrcl2NnrLkefBJOi.
+gecos: Administrador
+loginShell: /bin/bash
+homeDirectory: /home/administrador
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+shadowLastChange: 18526
+
+dn: uid=userbash,ou=people,dc=srv,dc=world
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+sn: userbash
+givenName: userbash
+cn: userbash
+displayName: userbash
+uidNumber: 1001
+gidNumber: 1001
+userPassword: {crypt}!
+gecos: userbash
+loginShell: /bin/sh
+homeDirectory: /home/userbash
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+shadowLastChange: 18534
+
+dn: uid=usuario,ou=people,dc=srv,dc=world
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+sn: HLC
+givenName: Usuario
+cn: Usuario
+displayName: Usuario HLC
+uidNumber: 1002
+gidNumber: 1002
+userPassword: {crypt}$6$YuHTaNw3a2NYwpxJ$lp7qlgG6fu6jBOO9PgUh2HQthu6VzHHA0rWCyIfDML5ZAPHojCYaWcYxURQRi7APFRKGiYGSgL2acWv.WsYyG1
+gecos: Usuario HLC
+loginShell: /bin/bash
+homeDirectory: /home/usuario
+shadowExpire: -1
+shadowFlag: 0
+shadowWarning: 7
+shadowMin: 0
+shadowMax: 99999
+shadowLastChange: 18590
+
+dn: cn=administrador,ou=groups,dc=srv,dc=world
+objectClass: posixGroup
+cn: administrador
+gidNumber: 1000
+memberUid: administrador
+
+dn: cn=userbash,ou=groups,dc=srv,dc=world
+objectClass: posixGroup
+cn: userbash
+gidNumber: 1001
+memberUid: userbash
+
+dn: cn=usuario,ou=groups,dc=srv,dc=world
+objectClass: posixGroup
+cn: usuario
+gidNumber: 1002
+memberUid: usuario
+
